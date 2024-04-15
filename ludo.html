@@ -34,6 +34,14 @@
 
 
    
-   <script src ="ludo.js"></script>
+   <script>
+      function rolldice(){
+   const randomroll = [Math.floor(Math.random() *6 + 1), Math.floor(Math.random() *6 + 1),   Math.floor(Math.random() *6 + 1)];
+ document.querySelector('.dice-display').innerHTML= randomroll;
+ document.querySelector('.dice1').src = `${randomroll[0]}.png`;
+ document.querySelector('.dice2').src=`${randomroll[1]}.png`
+ document.querySelector('.dice3').src= `${randomroll[2]}.png`
+}
+</script>
 </body>
 </html>
