@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   <meta charset="UTF-8">
+   <title>Page title</title>
+   <link rel ="stylesheet" href ="rock-paper-scissors.css">
+</head>
+<body>
+   <audio id="audio" src="game.mp3"></audio>
+   <audio id ="clickSound" src ="clickSound.wav"></audio>
+   <div style ="background-image: url(blue-background.png); height: 300px; width: 500px;">
+   <p style =" color: #ff9d2b; font-weight: bold;">Rock Paper Scissors</p>
+   <button onclick ="pickComputerMove(), playGame('rock'), clickSound.play()"
+    >rock</button>
+   <button onclick ="pickComputerMove(), playGame('paper'), clickSound.play()">paper</button>
+   <button onclick ="pickComputerMove(), playGame('scissors'), clickSound.play()">scissors</button>
+   <button id ="resetBtn"> reset score </button><br>
+   <img id ="yourMove" style ="height: 50px;" src="" alt="">
+   <img id ="ComputerMove" style ="height: 50px;" src="" alt="">
+   
+   <p id ="p2" style ="color: #ff001f;"></p>
+   <p id ="p3"></p>
+   </div>
+   
+   
+   
+   <script src ="rock-paper-scissors.js"></script>
+</body>
+</html>
