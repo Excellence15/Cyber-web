@@ -49,7 +49,7 @@ let result = '';
          if (computerMove === 'paper') {
          result = 'Tie.';}
          if (computerMove === 'scissors') {
-         result = 'You lose';}
+         result = 'You lose.';}
          }  
         
         if(playerMove === 'rock') {
